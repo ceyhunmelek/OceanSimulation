@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='js/quintus-all.js'></script>
+    <style>canvas{background-image: url('images/background.jpg');}
+    </style>
+    <title>Ocean Simulator</title>
+</head>
+<body class="bg-dark">
+    <div class="row">
+        <div id="canvasCol" class="col-9 m-0 p-0">
+            
+            <canvas id="myGame">
+                Sorry, your browser doesn't support the &lt;canvas&gt; element.
+              </canvas>
+              <div class="row">
+                  <div class="col-9">
+                    <button class="btn btn-primary mx-5" id="startSimulation">Start Simulation</button>
+                  </div>
+                  <div class="col-2">
+                      <p class="h3 text-light" id="dayArea">Month: 0</p>
+                  </div>
+                </div>
+        </div>
+        <div class="col-3 bg-dark p-2 overflow-auto">
+            <p class="lead text-light mt-2">Whale</p>
+            <input type="number" class="form-control-range my-2" id="whaleInitPop" min="1" max="20" placeholder="Initial Population (1-20)">
+            <input type="number" class="form-control-range my-2" id="whaleAvgLifetime" min="1" placeholder="Average Lifetime (month)">
+            <input type="number" class="form-control-range my-2" id="whaleBreedingFreq" min="1" placeholder="Breeding Frequency (month)">
+            <input type="number" class="form-control-range my-2" id="whaleAvgBaby" min="1" placeholder="Average Number of Babies">
+            <input type="number" class="form-control-range my-2" id="whalebabyProbability" min="0" max="1" step="0.01" placeholder="Probability of Healthy Baby">
+            <input type="number" class="form-control-range my-2" id="whaleNutrition" min="1" placeholder="Nutrition per Day">
+
+
+            <p class="lead text-light mt-4">Angler</p>
+            <input type="number" class="form-control-range my-2" id="anglerInitPop" min="1" max="20" placeholder="Initial Population (1-20)">
+            <input type="number" class="form-control-range my-2" id="anglerAvgLifetime" min="1" placeholder="Average Lifetime (month)">
+            <input type="number" class="form-control-range my-2" id="anglerBreedingFreq" min="1" placeholder="Breeding Frequency (month)">
+            <input type="number" class="form-control-range my-2" id="anglerAvgBaby" min="1" placeholder="Average Number of Babies">
+            <input type="number" class="form-control-range my-2" id="anglerbabyProbability" min="0" max="1" step="0.01" placeholder="Probability of Healthy Baby">
+            <input type="number" class="form-control-range my-2" id="anglerNutrition" min="1" placeholder="Nutrition per Day">
+
+
+            <p class="lead text-light mt-4">Seaweed</p>
+            <input type="number" class="form-control-range my-2" id="swInitPop" min="1" max="20" placeholder="Initial Population (1-20)">
+            <input type="number" class="form-control-range my-2" id="swBreedingFreq" min="1" placeholder="Breeding Frequency (month)">
+            <input type="number" class="form-control-range my-2" id="swAvgBaby" min="1" placeholder="Average Number of Babies">
+            <input type="number" class="form-control-range my-2" id="swbabyProbability" min="0" max="1" step="0.01" placeholder="Probability of Healthy Baby">
+
+
+            <p class="lead text-light mt-4">Month Per Second</p>
+            <input type="number" class="form-control-range my-2" id="dayPerSecond" min="1" value="1">
+
+
+
+            <button class="btn btn-primary mx-5" id="saveVariables">Save Settings</button>
+    </div >
+
+    <script src="js/mainQ.js"></script>
+    <script src="js/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
