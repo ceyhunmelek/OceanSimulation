@@ -1,2 +1,2 @@
-# legendary-system
+# Ocean Simulation 
 Project for Modelling and Simulation course
